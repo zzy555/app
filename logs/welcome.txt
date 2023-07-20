@@ -1,0 +1,53 @@
+nohup: ignoring input
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> main.main.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8001
+[GIN] 2023/07/20 - 00:08:55 | 200 |      27.825µs |  112.95.117.211 | GET      "/"
+[GIN] 2023/07/20 - 00:11:43 | 200 |       9.029µs |  112.95.117.211 | GET      "/"
+[GIN] 2023/07/20 - 00:20:39 | 404 |         524ns |       127.0.0.1 | GET      "/favicon.ico"
+[GIN] 2023/07/20 - 00:20:42 | 200 |      39.023µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:20:43 | 200 |      22.995µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:20:44 | 200 |      23.423µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:20:45 | 200 |      19.327µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:20:45 | 200 |       18.48µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:23:21 | 200 |      20.864µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:23:23 | 200 |      41.971µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:23:24 | 200 |      19.732µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:23:26 | 200 |      20.089µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:25:01 | 200 |      20.237µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:25:09 | 200 |      19.118µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:25:17 | 200 |      19.224µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 00:25:26 | 200 |      35.939µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 01:01:20 | 404 |         651ns |       127.0.0.1 | GET      "/wsman"
+[GIN] 2023/07/20 - 02:27:39 | 404 |         654ns |       127.0.0.1 | GET      "/favicon.ico"
+[GIN] 2023/07/20 - 02:41:03 | 200 |      37.728µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 02:51:27 | 200 |      19.345µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 02:51:29 | 404 |         736ns |       127.0.0.1 | GET      "/debug/default/view?panel=config"
+[GIN] 2023/07/20 - 02:51:31 | 404 |         603ns |       127.0.0.1 | GET      "/server-status"
+[GIN] 2023/07/20 - 02:51:32 | 404 |       1.181µs |       127.0.0.1 | GET      "/.DS_Store"
+[GIN] 2023/07/20 - 02:51:34 | 404 |         874ns |       127.0.0.1 | GET      "/s/0393e21363e293e2933313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties"
+[GIN] 2023/07/20 - 02:51:36 | 200 |      34.209µs |       127.0.0.1 | GET      "/?rest_route=/wp/v2/users/"
+[GIN] 2023/07/20 - 03:40:42 | 200 |      24.829µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 05:23:57 | 404 |         760ns |       127.0.0.1 | GET      "/v2/_catalog"
+[GIN] 2023/07/20 - 05:34:21 | 404 |         825ns |       127.0.0.1 | GET      "/server-status"
+[GIN] 2023/07/20 - 05:38:02 | 404 |         892ns |       127.0.0.1 | GET      "/telescope/requests"
+[GIN] 2023/07/20 - 05:56:25 | 404 |         833ns |       127.0.0.1 | GET      "/showLogin.cc"
+[GIN] 2023/07/20 - 06:50:26 | 404 |         482ns |       127.0.0.1 | GET      "/upl.php"
+[GIN] 2023/07/20 - 06:58:42 | 404 |         550ns |       127.0.0.1 | GET      "/druid/index.html"
+[GIN] 2023/07/20 - 08:19:27 | 200 |      20.016µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 09:02:52 | 200 |      19.163µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 09:30:15 | 200 |      36.195µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 10:01:54 | 404 |         625ns |       127.0.0.1 | GET      "/boaform/admin/formLogin?username=adminisp&psd=adminisp"
+[GIN] 2023/07/20 - 12:30:26 | 200 |       25.87µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 12:33:22 | 404 |         841ns |       127.0.0.1 | GET      "/files/"
+[GIN] 2023/07/20 - 14:23:41 | 404 |         666ns |       127.0.0.1 | POST     "/"
+[GIN] 2023/07/20 - 18:04:13 | 200 |      19.956µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 18:18:26 | 200 |      28.628µs |       127.0.0.1 | GET      "/"
+[GIN] 2023/07/20 - 18:18:27 | 200 |       27.86µs |       127.0.0.1 | GET      "/"
