@@ -1,12 +1,17 @@
 package main
 
 import (
+	gormdemo "app/gormDemo"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	gormdemo.Gorm()
+}
+
+func ginRun() {
 	// 1.创建路由
 	r := gin.Default()
 	// 2.绑定路由规则，执行的函数
