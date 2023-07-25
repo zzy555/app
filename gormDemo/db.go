@@ -18,4 +18,5 @@ func Gorm() {
 	db.AutoMigrate(&Product{})
 	//db.Create(&Product{Code: "101", Price: 1000})
 	//MyCreateBySQL(db)
+	MySelect(db)
 }
