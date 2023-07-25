@@ -2,14 +2,23 @@ package gormdemo
 
 import (
 	"fmt"
-
+        "time"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
 
 type Product struct {
-	Code  string
-	Price uint
+	ID    uint         `gorm:"primaryKey;autoIncrement"`
+	Code  string       `gorm:"type:varchar(8)"`
+	Price uint         `gorm:"column:prices"`
+	CreatedTime time.Time `gorm:"autoCreateTime"`
+	UpdateTime  time.Time `gorm:"autoUpdateTime"`
+}
+
+func (p *Product) BeforeCreate(tx *gorm.DB) (err error) {
+	fmt.Print("before create:",p)
+	return nil
+
 }
 
 func Gorm() {
@@ -21,6 +30,19 @@ func Gorm() {
 	}
 
 	db.AutoMigrate(&Product{})
-	db.Create(&Product{Code: "100", Price: 101})
+	//db.Create(&Product{Code: "101", Price: 1000})
+
+	myCreate(db)
+}
+
+func myCreate(db *gorm.DB) {
+	//var product = []Product{{Code:"110", Price: 666}, {Code:"111",Price: 777}}
+	//db.CreateInBatches(product,5)
+
+	//db.Model(&Product{}).Create(map[string]interface{}{
+	//	"Code": "121", "Price": 11,
+	//})
+	
+	db.Select("Code","Price").Create(&Product{Code:"131", Price: 12})
 
 }
