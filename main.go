@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"runtime"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -22,12 +23,13 @@ func test(c *gin.Context) {
 	num := runtime.NumGoroutine()
 	fmt.Println("goroutine:", num)
 
-	n := 100
-	for i := 1; i <= n; i++ {
-		if i == n {
-			fmt.Println("i:", i)
-		}
-	}
+	// n := 100
+	// for i := 1; i <= n; i++ {
+	// 	if i == n {
+	// 		fmt.Println("i:", i)
+	// 	}
+	// }
+	time.Sleep(time.Millisecond * 100)
 
 	c.String(http.StatusOK, "test")
 }
